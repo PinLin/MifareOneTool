@@ -168,6 +168,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -253,6 +255,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -277,6 +281,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             Process p = Process.Start(psi);
             p.WaitForExit();
             string rawStr = p.StandardOutput.ReadToEnd();
@@ -375,6 +381,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -401,6 +409,8 @@ namespace MifareOneTool
         {
             ProcessStartInfo psi = new ProcessStartInfo("cmd.exe");
             psi.WorkingDirectory = "nfc-bin";
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             Process.Start(psi);
         }
 
@@ -508,6 +518,9 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
+
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -565,6 +578,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -620,6 +635,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -658,6 +675,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -698,6 +717,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -758,6 +779,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -815,6 +838,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -846,6 +871,8 @@ namespace MifareOneTool
             ProcessStartInfo psi = new ProcessStartInfo("cmd");
             psi.Arguments = "/k mfcuk.exe -v 3 -C -R -1 -s 250 -S 250";
             psi.WorkingDirectory = "nfc-bin";
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -925,6 +952,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -982,6 +1011,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1034,6 +1065,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi);
@@ -1196,6 +1229,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1319,6 +1354,8 @@ namespace MifareOneTool
             string[] args = (string[])e.Argument;
             psi.WorkingDirectory = "./";
             psi.Arguments = "/T:0A " + args[2] + @" nfc-bin\mfoc.exe " + args[1] + " -O \"" + args[0] + "\"";
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1395,6 +1432,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 
@@ -1425,6 +1464,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             process = Process.Start(psi); 

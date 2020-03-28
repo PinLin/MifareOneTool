@@ -90,6 +90,8 @@ namespace MifareOneTool
             psi.UseShellExecute = false;
             psi.RedirectStandardOutput = true;
             psi.RedirectStandardError = true;
+            psi.StandardOutputEncoding = Encoding.GetEncoding(936);
+            psi.StandardErrorEncoding = Encoding.GetEncoding(936);
             lprocess = true;
             BackgroundWorker b = (BackgroundWorker)sender;
             b.ReportProgress(1);
